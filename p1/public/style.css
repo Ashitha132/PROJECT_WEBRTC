@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: sans-serif,'Poppins';
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #05042b;
+    position: relative;
+    color:rgb(124, 104, 196);
+    border: 20px solid rgba(211, 210, 218, 0.075);
+}
+.navbar {
+    background-color: rgba(211, 210, 218, 0.075);
+    overflow: hidden;
+    position: fixed;
+    bottom: 5%;
+    right: 10%;
+    
+    width: 80%;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .navbar a:hover {
+    background-color: #ddd;
+    color: rgba(230, 217, 217, 0.815);
+  }
+  .navbar a.active {
+    background-color: #05042b;
+    color: white;
+  }      
