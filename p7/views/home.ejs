@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="homejs.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ 
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <title>Home</title>
+
+<style media="screen">
+body{
+  background-color:#ededed;
+  padding:30px;
+}
+.simg{
+  padding:100px;
+  width:700px;
+}
+th{
+  padding-left:80px;
+}
+td{
+  padding:2px;
+    padding-top:20px;
+}
+input{
+  height:40px;
+}
+
+#slideshow {
+  overflow: hidden;
+  height: 510px;
+  width: 728px;
+  margin: 0 auto;
+}
+
+/* Style each of the sides
+with a fixed width and height */
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+
+/* Add animation to the slides */
+.slide-wrapper {
+
+/* Calculate the total width on the
+  basis of number of slides */
+  width: calc(728px * 4);
+
+/* Specify the animation with the
+  duration and speed */
+  animation: slide 10s ease infinite;
+}
+
+/* Set the background color
+of each of the slides */
+
+
+/* Define the animation
+for the slideshow */
+@keyframes slide {
+
+/* Calculate the margin-left for
+  each of the slides */
+  20% {
+    margin-left: 0px;
+  }
+
+  40% {
+    margin-left: calc(-728px * 1);
+  }
+
+  60% {
+    margin-left: calc(-728px * 2);
+  }
+
+  80% {
+    margin-left: calc(-728px * 3);
+  }
+}
+
+</style>
+
+
+</head>
+<body>
+
+
+
+
+<table>
+  <tr>
+    <img src="icon2.png" height="50px" alt=""><h3>LIVE LINK</h3>
+  </tr>
+  <tr >
+    <th>
+
+      <table>
+
+        <tr>
+          <h2>
+            <p style="font-size:37px">Real Time Meetings</p>
+          </h2>
+          <h2>
+            <p style="font-size:37px">Free For All</p>
+          </h2>
+        </tr>
+        <tr>
+          <p style="font-size:18px">Developed this service for secure Meeting purpose, to make it free and
+          available to everyone equelly. No account needed.</p>
+          <p></p>
+        </tr>
+        <tr>
+          <td><a href="/room" id="create-btn" class="btn btn-primary" >New Meeting</a></td>
+          <td><input type="text" class="form-control" placeholder="Enter meeting  link" id="my" name=""></td><td><button class="btn btn-primary" id="join">Join</button></td>
+        </tr>
+      </table>
+
+    </th>
+    <th>
+      <div id="slideshow">
+        <div class="slide-wrapper">
+
+        <!-- Define each of the slides
+         and write the content -->
+
+            <div id="slide" class="slide">
+                <img src="pic.jpeg" class="simg" alt="">
+            </div>
+            <div id="slide" class="slide">
+                <img class="simg" src="chat.png" alt="">
+            </div>
+            <div id="slide" class="slide">
+                <img class="simg" src="pic1.jpg" alt="">
+            </div>
+            <div id="slide" class="slide">
+                <img class="simg" src="key.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    </th>
+  </tr>
+</table>
+
+</body>
+</html>

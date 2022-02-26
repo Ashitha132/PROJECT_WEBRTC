@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script>
+    const ROOM_ID = "<%= roomId %>"
+    
+
+
+  </script>
+ <script defer src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"></script>
+ 
+  <script src="/socket.io/socket.io.js" defer></script>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Document</title>
+ 
+</script>
+  <style>
+    #video-grid {
+      display: grid;
+     
+      
+      grid-template-columns: repeat(auto-fill, 350px);
+      grid-auto-rows: 350px;
+    }
+    
+    video {
+      border-style: outset;
+      width: 100%;
+      background-color:rgba(15, 112, 202, 0.295) ;
+      height: 100%;
+      object-fit: cover;
+    }
+
+   
+  </style>
+</head>
+<body bgcolor="#ededed" >
+
+  <h2 align="center" style="color:#0464c5;background-color: #0465c579;" > ROOM ID :
+    <%=roomId %>
+  </h1>
+  <br><br>
+  <div id="video-grid"></div>
+  <div class="navbar">
+    <center>
+
+    <button class="button" id="toggle-cam">Hide cam</button>
+    <button class="button" id="toggle-audio">Mute</button>
+    <button class="button" id="screen-share">Share screen</button>
+    <button  class="button" id ="copy-text">Copy  Url</button>
+    <p id="alarmmsg" ></p>
+    
+            
+
+   
+  </center>
+  </div>
+  
+  
+  
+  
+</body>
+</html>
